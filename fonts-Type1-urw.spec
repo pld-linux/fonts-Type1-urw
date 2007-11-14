@@ -53,7 +53,7 @@ fontpostinst Type1
 
 %files
 %defattr(644,root,root,755)
-%doc README*
+%doc README* ChangeLog
 %{t1fontsdir}/fonts.scale.urw
 %{t1fontsdir}/*.pfb
 %{t1afmdir}/*.afm
