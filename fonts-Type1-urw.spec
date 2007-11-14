@@ -9,6 +9,8 @@ Source0:	ftp://ftp.gnome.ru/fonts/urw/release/urw-fonts-%{version}%{pre}.tar.bz2
 # Source0-md5:	97ff7f315bcf36558d7f326878551ac3
 Requires(post,postun):	fontpostinst >= 0.1-6
 Requires:	%{_fontsdir}/Type1
+Obsoletes:	ghostscript-fonts-std
+Provides:	ghostscript-fonts-std = %{version}-%{release}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
