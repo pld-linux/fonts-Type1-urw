@@ -1,5 +1,6 @@
 %define	pre	pre43
 Summary:	Free versions of the 35 standard PostScript fonts
+Summary(pl.UTF-8):	Wolnodostępne wersje 35 standardowych fontów postscriptowych
 Name:		fonts-Type1-urw
 Version:	1.0.7
 Release:	0.%{pre}.2
@@ -10,8 +11,8 @@ Source0:	ftp://ftp.gnome.ru/fonts/urw/release/urw-fonts-%{version}%{pre}.tar.bz2
 BuildRequires:	xorg-app-mkfontscale
 Requires(post,postun):	fontpostinst >= 0.1-6
 Requires:	%{_fontsdir}/Type1
+Provides:	ghostscript-fonts-std
 Obsoletes:	ghostscript-fonts-std
-Provides:	ghostscript-fonts-std = %{version}-%{release}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -24,8 +25,11 @@ donated under the GPL by URW++ Design and Development GmbH. The
 fonts.dir file font names match the original Adobe names of the fonts
 (e.g., Times, Helvetica, etc.).
 
-Install the urw-fonts package if you need free versions of standard
-PostScript fonts.
+%description -l pl.UTF-8
+Wolnodostępne, dobrej jakości wersje 35 standardowych fontów
+postscriptowych, wydanych na licencji GPL przez URW++ Design and
+Development GmbH. Plik fonts.dir zawiera nazwy fontów pasujące do
+oryginalnych nazw Adobe (np. Times, Helvetica itd.).
 
 %prep
 %setup -q -c
