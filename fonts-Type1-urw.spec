@@ -3,7 +3,7 @@ Summary:	Free versions of the 35 standard PostScript fonts
 Summary(pl.UTF-8):	Wolnodostępne wersje 35 standardowych fontów postscriptowych
 Name:		fonts-Type1-urw
 Version:	1.0.7
-Release:	0.%{pre}.2
+Release:	0.%{pre}.3
 License:	GPL v2
 Group:		Fonts
 Source0:	ftp://ftp.gnome.ru/fonts/urw/release/urw-fonts-%{version}%{pre}.tar.bz2
