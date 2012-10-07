@@ -3,7 +3,7 @@ Summary:	Free versions of the 35 standard PostScript fonts
 Summary(pl.UTF-8):	Wolnodostępne wersje 35 standardowych fontów postscriptowych
 Name:		fonts-Type1-urw
 Version:	1.0.7
-Release:	0.%{pre}.3
+Release:	0.%{pre}.4
 License:	GPL v2
 Group:		Fonts
 Source0:	ftp://ftp.gnome.ru/fonts/urw/release/urw-fonts-%{version}%{pre}.tar.bz2
@@ -46,13 +46,12 @@ LC_ALL=C sort -u fonts.dir.raw fonts.scale.add > fonts.scale.urw
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{t1fontsdir},%{t1afmdir},%{t1pfmdir}}
+cp -p *.pfb $RPM_BUILD_ROOT%{t1fontsdir}
+cp -p *.afm $RPM_BUILD_ROOT%{t1afmdir}
+cp -p *.pfm $RPM_BUILD_ROOT%{t1pfmdir}
 
-install *.pfb $RPM_BUILD_ROOT%{t1fontsdir}
-install *.afm $RPM_BUILD_ROOT%{t1afmdir}
-install *.pfm $RPM_BUILD_ROOT%{t1pfmdir}
-
-install fonts.scale.urw $RPM_BUILD_ROOT%{t1fontsdir}/fonts.scale.urw
-install %{SOURCE1} $RPM_BUILD_ROOT%{t1fontsdir}/Fontmap.urw
+cp -p fonts.scale.urw $RPM_BUILD_ROOT%{t1fontsdir}/fonts.scale.urw
+cp -p %{SOURCE1} $RPM_BUILD_ROOT%{t1fontsdir}/Fontmap.urw
 
 %clean
 rm -rf $RPM_BUILD_ROOT
