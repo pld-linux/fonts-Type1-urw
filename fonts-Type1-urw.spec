@@ -1,13 +1,13 @@
-%define	pre	pre43
+%define	pre	pre44
 Summary:	Free versions of the 35 standard PostScript fonts
 Summary(pl.UTF-8):	Wolnodostępne wersje 35 standardowych fontów postscriptowych
 Name:		fonts-Type1-urw
 Version:	1.0.7
-Release:	0.%{pre}.4
+Release:	0.%{pre}.1
 License:	GPL v2
 Group:		Fonts
-Source0:	ftp://ftp.gnome.ru/fonts/urw/release/urw-fonts-%{version}%{pre}.tar.bz2
-# Source0-md5:	97ff7f315bcf36558d7f326878551ac3
+Source0:	https://distfiles.macports.org/urw-fonts/urw-fonts-%{version}%{pre}.tar.bz2
+# Source0-md5:	51c6c2690593cd9bd92f197a6f2ff8bd
 Source1:	%{name}.Fontmap
 BuildRequires:	xorg-app-mkfontscale
 Requires(post,postun):	fontpostinst >= 0.1-6
