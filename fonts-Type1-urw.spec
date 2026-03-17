@@ -2,7 +2,7 @@ Summary:	Free versions of the 35 standard PostScript fonts
 Summary(pl.UTF-8):	Wolnodostępne wersje 35 standardowych fontów postscriptowych
 Name:		fonts-Type1-urw
 Version:	20151005
-Release:	1
+Release:	2
 License:	AGPL v3 with PS/PDF embedding exception
 Group:		Fonts
 Source0:	http://downloads.ghostscript.com/public/fonts/urw-base35-%{version}.zip
